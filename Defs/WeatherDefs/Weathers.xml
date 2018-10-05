@@ -7,9 +7,9 @@
     <description>A clear day. No penalties or modifiers.</description>
     <repeatable>true</repeatable>
     <favorability>Good</favorability>
-	<perceivePriority>0</perceivePriority>									  
+    <perceivePriority>0</perceivePriority>
     <ambientSounds>
-      <li>AmbientWind_Clear</li>
+      <li>Ambient_Wind_Clear</li>
     </ambientSounds>   
     <!-- Colors are Clear -->
     <skyColorsDay>
@@ -45,9 +45,9 @@
     <windSpeedFactor>0.5</windSpeedFactor>
     <accuracyMultiplier>0.5</accuracyMultiplier>
     <favorability>Neutral</favorability>
-	<perceivePriority>1</perceivePriority>									  
+    <perceivePriority>1</perceivePriority>
     <ambientSounds>
-      <li>AmbientWind_Fog</li>
+      <li>Ambient_Wind_Fog</li>
     </ambientSounds>
     <overlayClasses>
       <li>WeatherOverlay_Fog</li>
@@ -93,14 +93,15 @@
       <min>0</min>
       <max>100</max>
     </temperatureRange>
-    <windSpeedFactor>1.55</windSpeedFactor>
+    <windSpeedFactor>1.5</windSpeedFactor>
     <accuracyMultiplier>0.8</accuracyMultiplier>
     <favorability>Neutral</favorability>
-	<perceivePriority>1</perceivePriority>									  
+    <perceivePriority>1</perceivePriority>
+    <exposedThought>SoakingWet</exposedThought>
     <rainRate>1</rainRate>
     <moveSpeedMultiplier>0.9</moveSpeedMultiplier>
     <ambientSounds>
-      <li>AmbientRain</li>
+      <li>Ambient_Rain</li>
     </ambientSounds>
     <overlayClasses>
       <li>WeatherOverlay_Rain</li>
@@ -147,23 +148,23 @@
       <min>0</min>
       <max>999</max>
     </temperatureRange>
-    <windSpeedFactor>1.6</windSpeedFactor>
+    <windSpeedFactor>1.5</windSpeedFactor>
     <favorability>VeryBad</favorability>
-	<perceivePriority>2</perceivePriority>									  
+    <perceivePriority>2</perceivePriority>
     <ambientSounds>
-      <li>AmbientWind_Storm</li>
+      <li>Ambient_Wind_Storm</li>
     </ambientSounds>
     <durationRange>
-      <min>10000</min>
-      <max>37000</max>
+      <min>15000</min>
+      <max>40000</max>
     </durationRange>
     <eventMakers>
       <li>
-        <averageInterval>850</averageInterval>
+        <averageInterval>1200</averageInterval>
         <eventClass>WeatherEvent_LightningFlash</eventClass>
       </li>
       <li>
-        <averageInterval>1300</averageInterval>
+        <averageInterval>1200</averageInterval>
         <eventClass>WeatherEvent_LightningStrike</eventClass>
       </li>
     </eventMakers>
@@ -204,25 +205,26 @@
     </temperatureRange>
     <windSpeedFactor>1.5</windSpeedFactor>
     <favorability>Bad</favorability>
-	<perceivePriority>2</perceivePriority>									  
-    <accuracyMultiplier>0.75</accuracyMultiplier>
+    <perceivePriority>2</perceivePriority>
+    <exposedThought>SoakingWet</exposedThought>
+    <accuracyMultiplier>0.8</accuracyMultiplier>
     <rainRate>1</rainRate>
     <moveSpeedMultiplier>0.8</moveSpeedMultiplier>
     <ambientSounds>
-      <li>AmbientWind_Storm</li>
-      <li>AmbientRain</li>
+      <li>Ambient_Wind_Storm</li>
+      <li>Ambient_Rain</li>
     </ambientSounds>
     <durationRange>
-      <min>13000</min>
-      <max>38000</max>
+      <min>15000</min>
+      <max>40000</max>
     </durationRange>
     <eventMakers>
       <li>
-        <averageInterval>800</averageInterval>
+        <averageInterval>1200</averageInterval>
         <eventClass>WeatherEvent_LightningFlash</eventClass>
       </li>
       <li>
-        <averageInterval>800</averageInterval>
+        <averageInterval>1200</averageInterval>
         <eventClass>WeatherEvent_LightningStrike</eventClass>
       </li>
     </eventMakers>
@@ -273,13 +275,14 @@
     </temperatureRange>
     <windSpeedFactor>1.5</windSpeedFactor>
     <favorability>Neutral</favorability>
-	<perceivePriority>1</perceivePriority>									  
-    <accuracyMultiplier>0.4</accuracyMultiplier>
+    <perceivePriority>1</perceivePriority>
+    <exposedThought>SoakingWet</exposedThought>
+    <accuracyMultiplier>0.5</accuracyMultiplier>
     <rainRate>1</rainRate>
     <moveSpeedMultiplier>0.9</moveSpeedMultiplier>
     <ambientSounds>
-      <li>AmbientWind_Fog</li>
-      <li>AmbientRain</li>
+      <li>Ambient_Wind_Fog</li>
+      <li>Ambient_Rain</li>
     </ambientSounds>
     <overlayClasses>
       <li>WeatherOverlay_Fog</li>
@@ -326,13 +329,13 @@
       <min>-999</min>
       <max>-0.5</max>
     </temperatureRange>
-    <snowRate>1.4</snowRate>
+    <snowRate>1.2</snowRate>
     <windSpeedFactor>1.5</windSpeedFactor>
-    <accuracyMultiplier>0.7</accuracyMultiplier>
+    <accuracyMultiplier>0.8</accuracyMultiplier>
     <favorability>Neutral</favorability>
-	<perceivePriority>1</perceivePriority>									  
+    <perceivePriority>1</perceivePriority>
     <rainRate>1</rainRate>
-    <moveSpeedMultiplier>0.7</moveSpeedMultiplier>
+    <moveSpeedMultiplier>0.8</moveSpeedMultiplier>
     <commonalityRainfallFactor>
       <points>
         <li>(0, 0)</li>
@@ -341,7 +344,7 @@
       </points>
     </commonalityRainfallFactor>
     <ambientSounds>
-      <li>AmbientWind_Storm</li>
+      <li>Ambient_Wind_Storm</li>
     </ambientSounds>
     <overlayClasses>
       <li>WeatherOverlay_SnowHard</li>
@@ -383,9 +386,9 @@
     </temperatureRange>
     <snowRate>0.8</snowRate>
     <windSpeedFactor>1.5</windSpeedFactor>
-    <accuracyMultiplier>0.9</accuracyMultiplier>
+    <accuracyMultiplier>0.8</accuracyMultiplier>
     <favorability>Neutral</favorability>
-	<perceivePriority>1</perceivePriority>									  
+    <perceivePriority>1</perceivePriority>
     <rainRate>1</rainRate>
     <commonalityRainfallFactor>
       <points>
@@ -395,7 +398,7 @@
       </points>
     </commonalityRainfallFactor>
     <ambientSounds>
-      <li>AmbientWind_Clear</li>
+      <li>Ambient_Wind_Clear</li>
     </ambientSounds>
     <overlayClasses>
       <li>WeatherOverlay_SnowGentle</li>
